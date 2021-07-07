@@ -8,6 +8,7 @@ import 'package:flutter_launcher_icons/platforms/ios.dart' as ios;
 import 'package:flutter_launcher_icons/platforms/macos.dart' as macos;
 import 'package:flutter_launcher_icons/platforms/android.dart' as android;
 import 'package:flutter_launcher_icons/platforms/web.dart' as web;
+import 'package:flutter_launcher_icons/platforms/windows.dart' as windows;
 import 'package:flutter_launcher_icons/main.dart' as main_dart;
 import 'package:flutter_launcher_icons/common/constants.dart' as constants;
 
@@ -27,6 +28,10 @@ void main() {
 
   test('Web icon list is correct size', () {
     expect(web.webIcons.length, 3);
+  });
+
+  test('Windows icon list is correct size', () {
+    expect(windows.windowsIcons.length, 7);
   });
 
   test(
