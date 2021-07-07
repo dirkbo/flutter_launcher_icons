@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'package:image/image.dart';
-import 'utils.dart';
+import '../utils.dart';
 
 class IconTemplate {
   IconTemplate({required this.size, required this.baseName, required this.suffix, required this.location});

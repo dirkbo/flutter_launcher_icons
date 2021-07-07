@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:image/image.dart';
 
-import 'custom_exceptions.dart';
+import 'common/custom_exceptions.dart';
 
 Image createResizedImage(int iconSize, Image image) {
   if (image.width >= iconSize) {

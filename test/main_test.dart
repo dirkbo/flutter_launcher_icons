@@ -4,10 +4,11 @@ import 'package:args/args.dart';
 import 'package:test/test.dart';
 import 'package:yaml/yaml.dart' as yaml;
 import 'package:path/path.dart' as pathlib;
-import 'package:flutter_launcher_icons/ios.dart' as ios;
-import 'package:flutter_launcher_icons/android.dart' as android;
+import 'package:flutter_launcher_icons/platforms/ios.dart' as ios;
+import 'package:flutter_launcher_icons/platforms/macos.dart' as macos;
+import 'package:flutter_launcher_icons/platforms/android.dart' as android;
 import 'package:flutter_launcher_icons/main.dart' as main_dart;
-import 'package:flutter_launcher_icons/constants.dart' as constants;
+import 'package:flutter_launcher_icons/common/constants.dart' as constants;
 
 // Unit tests for main.dart
 void main() {
@@ -118,6 +119,8 @@ flutter_icons:
       'image_path': 'assets/images/icon-710x599.png',
       'android': true,
       'ios': true,
+      'macos' : true,
+      'windows' : true,
       'web': true,
     };
     expect(main_dart.isConfigValid(flutterIconsConfig), true);
@@ -151,9 +154,13 @@ flutter_icons:
       'image_path_android': 'assets/images/icon-710x599.png',
       'image_path_ios': 'assets/images/icon-710x599.png',
       'image_path_web': 'assets/images/icon-710x599.png',
+      'image_path_macos': 'assets/images/icon-710x599.png',
+      'image_path_windows': 'assets/images/icon-710x599.png',
       'android': true,
       'ios': true,
       'web': true,
+      'macos': true,
+      'windows': true,
     };
     expect(main_dart.isConfigValid(flutterIconsConfigAll), true);
   });

@@ -5,15 +5,15 @@ import 'package:args/args.dart';
 import 'package:path/path.dart' as path;
 import 'package:yaml/yaml.dart';
 
-import 'abstract_platform.dart';
-import 'constants.dart';
-import 'custom_exceptions.dart';
+import 'common/abstract_platform.dart';
+import 'common/constants.dart';
+import 'common/custom_exceptions.dart';
 
-import 'android.dart' as android_launcher_icons;
-import 'ios.dart' as ios_launcher_icons;
-import 'macos.dart' as macos_launcher_icons;
-import 'web.dart' as web_launcher_icons;
-import 'windows.dart' as windows_launcher_icons;
+import 'platforms/android.dart' as android_launcher_icons;
+import 'platforms/ios.dart' as ios_launcher_icons;
+import 'platforms/macos.dart' as macos_launcher_icons;
+import 'platforms/web.dart' as web_launcher_icons;
+import 'platforms/windows.dart' as windows_launcher_icons;
 
 const Map<String, AbstractPlatform> platforms = {
   'web': web_launcher_icons.WebIconGenerator(),

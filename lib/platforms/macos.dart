@@ -3,11 +3,11 @@ import 'dart:io';
 
 import 'package:image/image.dart';
 
-import 'abstract_platform.dart';
-import 'constants.dart';
-import 'contents_image_object.dart';
-import 'icon_template.dart';
-import 'utils.dart';
+import '../common/abstract_platform.dart';
+import '../common/constants.dart';
+import '../common/contents_image_object.dart';
+import '../common/icon_template.dart';
+import '../utils.dart';
 
 /// File to handle the creation of icons for macos platform
 
@@ -52,7 +52,7 @@ class MacOSIconGenerator extends AbstractPlatform {
       for (IconTemplate template in macosIcons) {
         _saveNewIcons(template, image, catalogName);
       }
-      iconName = windowsDefaultIconName;
+      iconName = macosDefaultIconName;
       _changeMacosLauncherIcon(catalogName, flavor);
       _modifyContentsFile(catalogName);
     } else if (macosConfig is String) {
@@ -72,7 +72,7 @@ class MacOSIconGenerator extends AbstractPlatform {
       for (IconTemplate template in macosIcons) {
         _overwriteDefaultIcons(template, image);
       }
-      iconName = windowsDefaultIconName;
+      iconName = macosDefaultIconName;
       _changeMacosLauncherIcon('AppIcon', flavor);
     }
   }

@@ -2,10 +2,10 @@ import 'dart:io';
 
 import 'package:image/image.dart';
 
-import 'abstract_platform.dart';
-import 'constants.dart';
-import 'icon_template.dart';
-import 'utils.dart';
+import '../common/abstract_platform.dart';
+import '../common/constants.dart';
+import '../common/icon_template.dart';
+import '../utils.dart';
 
 /// File to handle the creation of icons for Windows platform
 final IconTemplateGenerator templateGenerator = IconTemplateGenerator(

@@ -3,11 +3,11 @@ import 'dart:io';
 
 import 'package:image/image.dart';
 
-import 'abstract_platform.dart';
-import 'constants.dart';
-import 'contents_image_object.dart';
-import 'icon_template.dart';
-import 'utils.dart';
+import '../common/abstract_platform.dart';
+import '../common/constants.dart';
+import '../common/contents_image_object.dart';
+import '../common/icon_template.dart';
+import '../utils.dart';
 
 final IconTemplateGenerator templateGenerator = IconTemplateGenerator(
     defaultLocation: iosDefaultIconFolder, defaultSuffix: '.png');

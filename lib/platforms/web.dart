@@ -1,9 +1,9 @@
 import 'dart:io';
-import 'package:flutter_launcher_icons/abstract_platform.dart';
-import 'package:flutter_launcher_icons/icon_template.dart';
+import 'package:flutter_launcher_icons/common/abstract_platform.dart';
+import 'package:flutter_launcher_icons/common/icon_template.dart';
 import 'package:flutter_launcher_icons/utils.dart';
 import 'package:image/image.dart';
-import 'package:flutter_launcher_icons/constants.dart' as constants;
+import 'package:flutter_launcher_icons/common/constants.dart' as constants;
 
 final IconTemplateGenerator iconGenerator =
     IconTemplateGenerator(defaultLocation: constants.webIconLocation);

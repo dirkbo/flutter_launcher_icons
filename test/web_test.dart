@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:flutter_launcher_icons/icon_template.dart';
-import 'package:flutter_launcher_icons/web.dart';
+import 'package:flutter_launcher_icons/common/icon_template.dart';
+import 'package:flutter_launcher_icons/platforms/web.dart';
 import 'package:image/image.dart';
 import 'package:test/test.dart';
 
